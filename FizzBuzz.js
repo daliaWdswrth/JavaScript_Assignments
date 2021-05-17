@@ -1,6 +1,4 @@
-//March 16, 2021
-//CS81
-//Dalia Wadsworth
+
 
 
 //loop Fizz for odd numbers
