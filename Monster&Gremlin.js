@@ -1,6 +1,4 @@
-//assignment6.js
-//CS 81, 4/19/2021
-//Dalia Wadsworth
+
 
 class Monster {
     constructor (language){
