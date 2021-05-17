@@ -1,6 +1,4 @@
-//assignment3.js
-//March 22, 2021
-//Dalia Wadsworth
+
 
 let num = 6
 
