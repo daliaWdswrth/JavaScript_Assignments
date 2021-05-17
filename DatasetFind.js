@@ -1,6 +1,4 @@
-//assignment5.js
-//CS81, 4/5/2021
-//Dalia Wadsworth
+
 
 var dataSet = [
     {
