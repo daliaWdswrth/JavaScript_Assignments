@@ -1,6 +1,3 @@
-//assignment4.js
-//March 29, 2021
-//Dalia Wadsworth
 
 //define list
 let list = {
