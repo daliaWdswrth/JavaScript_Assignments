@@ -1,7 +1,7 @@
 
 
 // import packages to run the express app
-const express = require('express');
+var express = require('express');
 var app = express();
 var cors = require('cors');
 var bodyParser = require("body-parser");
@@ -17,6 +17,25 @@ var books = [
     { "author": "us", "title": "BookC", "pages": 500, "quality": "old" },
 ];
 
+
+// GET all books
+app.get('/books', (req, res) => {
+    res.status(200).send(JSON.stringify(books));
+  });
+
+// DELETE book by title
+app.delete('/book/:title', (req, res) => {
+    for (var i = 0; i < books.length; i++) {
+      if (books[i].title == req.params.title) {
+        books.splice(i, 1);
+        res.status(200).end();
+      }
+    }
+  
+    //Book not found send error code, resource doesn't exist
+    res.status(404).end();
+  });
+  
 
 // GET request handler to search based on title
 app.get('/book', function (req, res) {
@@ -94,3 +113,4 @@ app.post('/book', function (req, res) {
 app.listen(3000, function() {
     console.log("listening on port 3000");
 });
+
